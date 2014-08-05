@@ -1,0 +1,5 @@
+$contentCatalog=rivegaucheContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Online])[default=$contentCatalog:Online]
+
+INSERT_UPDATE EmailPageTemplate;$contentCV[unique=true];uid[unique=true];
+;;AdminCallback;
